@@ -27,15 +27,15 @@
                     <tr>
                         <td scope="row">{{ $comic->id }}</td>
                         <td>{{ $comic->title }}</td>
-                        <td>{{ $post->content }}</td>
+                        <td>{{ $comic->content }}</td>
                         <td><img width="120" src="{{ $comic->cover_image }}" alt="cover image"></td>
                         <td>{{ $comic->slug }}</td>
                         <td>
                             <div class="actions d-flex">
                                 <a class="btn btn-primary btn-sm text-white me-1"
-                                    href="{{ route('admin.posts.show', $comic->slug) }}">View</a>
+                                    href="{{ route('admin.comics.show', $comic->slug) }}">View</a>
                                 <a class="btn btn-secondary btn-sm text-white me-1"
-                                    href="{{ route('admin.posts.edit', $comic->slug) }}">Edit</a>
+                                    href="{{ route('admin.comics.edit', $comic->slug) }}">Edit</a>
 
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-danger btn-sm text-white" data-bs-toggle="modal"
@@ -59,7 +59,7 @@
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"
                                                     data-bs-dismiss="modal">Close</button>
-                                                <form action="{{ route('admin.posts.destroy', $comic->slug) }}"
+                                                <form action="{{ route('admin.comics.destroy', $comic->slug) }}"
                                                     method="post">
                                                     @csrf
                                                     @method('DELETE')
