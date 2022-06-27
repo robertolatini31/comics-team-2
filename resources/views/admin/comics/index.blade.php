@@ -11,7 +11,7 @@
             </div>
         @endif
 
-        <table class="table table-striped table-inverse table-responsive">
+        <table class="table  text-dark table-striped table-inverse table-responsive">
             <thead class="thead-inverse">
                 <tr>
                     <th>ID</th>
