@@ -6,3 +6,277 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+$dc-primary: #0282F9;
+$dc-main-dark: #1C1C1C;
+$dc-footer-dark: #303030;
+$dc-nav-text: #464646;
+$dc-list-text: #959595;
+
+.bs_1{
+    border-left: 1px solid;
+} 
+.be_1 {
+    border-right: 1px solid;
+}
+.bb_1 {
+    border-bottom: 1px solid;
+}
+.bt_1 {
+    border-top: 1px solid;
+}
+
+.dc_primary {
+    color: $dc-primary;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    .up_colored {
+        background-color: $dc-primary;
+        span {
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+    }
+    img {
+        max-width: 90px;
+    }
+    .col-2, .col-10, .logo_img {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    nav {
+        ul {
+            list-style: none;
+            .nav_li {
+                a{
+                    text-decoration: none;
+                    color: $dc-nav-text;
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                }
+                padding: 3rem 0;
+                margin: 0 0.8rem;
+                display: inline-block;
+                border-bottom: 4px solid transparent;
+                &:hover{
+                    border-color: $dc-primary;
+                }
+                &:hover a {
+                    color: $dc-primary;
+                }
+            }
+            .my_active {
+                border-color: $dc-primary!important;
+            }
+            .my_active a {
+                color: $dc-primary!important;
+            }
+        }
+    }
+    .serach_div {
+        border-bottom: 2px solid $dc-primary;
+    }
+}
+
+.jumbotron_my {
+    height: 350px;
+    background-image: url('../img/jumbotron.jpg');
+    background-position: top;
+    background-size: cover;
+}
+
+main {
+    background-color: $dc-main-dark;
+    color: white;
+    
+    .container {
+        position: relative;
+        h3 {
+        position: absolute;
+        top: -26px;
+        left: 16px;
+        text-transform: uppercase;
+        background-color: $dc-primary;
+        padding: 0.5rem 1rem;
+        }
+    
+            .my_card {
+                img {
+                    width: 220px;
+                    height: 220px;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                    object-position: top;
+                }
+                h4 {
+                    text-transform: uppercase;
+                    padding: 1rem 0;
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                }
+                p {
+                    visibility: hidden;
+                }
+                &:hover p {
+                    visibility: visible;
+                }
+            }
+            
+        
+        .btn_container {
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            button {
+                padding: 0.5rem 3rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: white;
+                background-color: $dc-primary;
+                border: none;
+                cursor: pointer;
+            }
+        
+        }
+    }
+}
+
+.services_section {
+    background-color: $dc-primary;
+    padding: 3rem 1rem;
+    a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    
+    img {
+        max-width: 60px;
+        aspect-ratio: 1.1;
+        object-fit: contain;
+    }
+}
+
+
+.dc_lists_section {
+        background-image: url('../img/dc-logo-bg.png'), url('../img/footer-bg.jpg');
+        background-position: 90% center, center;
+        background-size: 650px, cover;
+        background-repeat: no-repeat;
+        ul {
+            padding: 0!important;
+            margin: 0!important;
+            list-style: none;
+            line-height: 1.2rem;
+            li {  
+                font-size: 0.8rem;
+                a {
+                    text-decoration: none;
+                    color: $dc-list-text;
+                    font-weight: 500;
+                }
+            }
+            
+        }
+        p {
+            font-size: 0.8rem;
+            color: $dc-list-text;
+        }
+        a {
+            text-decoration: none;
+        }
+}
+
+footer {
+    padding: 2rem;
+    background-color: $dc-footer-dark;
+    button {
+        padding: 0.7rem;
+        border: 2px solid $dc-primary;
+        font-weight: 600;
+        background-color: transparent!important;
+    }
+    h3 {
+        color: $dc-primary;
+    }
+}
+
+.single_book_img_section {
+    height: 100px;
+    background-color: $dc-primary;
+    .type_text,.gallery_text {
+        background-color: #00a9d9;
+    }
+    .type_text {
+        top: 0;
+        left: 0;
+    }
+    .gallery_text {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .container_absolute {
+        top: -250px;
+        left: 0;
+    }
+}
+
+.description_section {
+    .description_section_title {
+        color: #003f5e;
+        margin-left: -11px!important;
+    }
+    .bg_dark_green {
+        background-color: #55ba59;
+    }
+    .light_green {
+        color: #92ef8d;
+    }
+    .border_dark_trasparent {
+        border-color: rgba(0, 0, 0, 0.427)!important;
+    }
+    p {
+        margin-left: -11px!important;
+        line-height: 2rem;
+    }
+}
+
+.single_book_section_specs {
+    background-color: #f6f6f6;
+    color: #003f5e;
+    border-color: rgba(91, 91, 91, 0.8)!important;
+    a {
+        text-decoration: none;
+        color: #00a9d9;
+    }
+    h6 {
+        font-weight: 400!important;
+    }
+}
+
+.single_book_section_digital {
+    background-color: #f6f6f6;
+    color: #a8a8a8;
+    border-color:rgb(234, 234, 234)!important;
+    img {
+        filter: brightness(0.8);
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+}
