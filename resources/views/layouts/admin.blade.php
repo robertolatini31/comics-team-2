@@ -67,11 +67,7 @@
                                 Seriess <span class="sr-only {{Route::currentRouteName() !== 'admin.series.index' ? 'd-none' : '' }}">(current)</span>
                             </a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link{{Route::currentRouteName() === 'admin.artists.index' ? 'active ps-3' : '' }}" href="{{ route('admin.artists.index') }}">
-                                Artists <span class="sr-only {{Route::currentRouteName() !== 'admin.artists.index' ? 'd-none' : '' }}">(current)</span>
-                            </a>
-                        </li> -->
+                       
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 Users
