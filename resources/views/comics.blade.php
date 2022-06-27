@@ -1,4 +1,4 @@
-@extends('_layouts._app')
+@extends('layouts.app')
 
 @section('content')
     <main id="site_main">
