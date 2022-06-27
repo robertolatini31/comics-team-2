@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Serie;
 use Illuminate\Http\Request;
-
+use Illuminate\Routing\Controller;
 class SerieController extends Controller
 {
     /**
